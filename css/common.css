@@ -44,16 +44,44 @@ body{
 	width:104px;
 	height:83px;
 	position:absolute;
-	margin-left:1096px;
-	margin-top:-1px;
+	margin-left:1097px;
+	/*margin-top:-1px;*/
 }
 #krug{
+	position:absolute;
 	background: url(../img/krug.png);
 	background-repeat:no-repeat;
 	width:441px;
 	height:441px;
-	position:absolute;
 	margin:170px 0 0 612px;
+}
+#why{
+	position:absolute;
+	margin-top:219px;
+	color:#fff;	
+}
+#why span{
+	color:#C91617;
+}
+#text{
+	position:absolute;
+	margin-top:366px;
+	width:548px;
+	color:#fff;		
+}
+#guotes{
+	position:absolute;
+	margin-top:590px;
+	color:#fff;	
+	letter-spacing:0.2em;
+}
+#point{
+	background: url(../img/point.svg);
+	background-repeat:no-repeat;
+	width:40px;
+	height:14px;
+	margin-top:640px;
+	
 }
 
 
