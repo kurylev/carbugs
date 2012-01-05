@@ -1,16 +1,16 @@
 
 #tabs{
-margin-top:40px;
+margin-top:26px;
 }
 #tabs a{
-margin-top:-90px;}
+margin-top:-80px;}
 .height{height:400px;}
 
 /* Layout helpers
 ----------------------------------*/
 .ui-helper-hidden { display: none; }
-.ui-helper-reset { margin: 40px 0 0 73px; padding: 0; border: 0; outline: 0; line-height: 1.1; text-decoration: none; font-size: 100%; list-style:none;} /*   Панель на которой держаться кнопки !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.ui-helper-clearfix:after { content: "."; display: block; height: 20px; clear: both; visibility: hidden; } /*Чтобы торчала серая панель !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.ui-helper-reset { margin: 40px 0 0 75px; padding: 0; border: 0; outline: 0; line-height: 1.1; text-decoration: none; font-size: 100%; list-style:none;} /*   Панель на которой держаться кнопки !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.ui-helper-clearfix:after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; } /*Чтобы торчала серая панель !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*.ui-helper-clearfix { display: inline-block; } */
 * html .ui-helper-clearfix { height:1%; }
 /*.ui-helper-clearfix { display:block; }*/
@@ -34,8 +34,8 @@ margin-top:-90px;}
 
 /* Interaction states
 ----------------------------------*/
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #373532; background: #373532; font-weight: normal; color: #1c94c4; }
-.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #eb8f00; text-decoration: none; } 
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #373532; background: #373532; font-weight: normal; color: #1c94c4; background-color:#fcc;}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #eb8f00; text-decoration: none; background-color:#fff;} 
 
 
 /* workarounds */
@@ -44,9 +44,24 @@ margin-top:-90px;}
 
 .ui-tabs { position: relative; padding: 0.2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
 .ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 0px; margin: 0 0em 0px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
-.ui-tabs .ui-tabs-nav li a { float: left; padding: 0.5em 1em; text-decoration: none; } /*Высота нажатой кнопки!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.ui-tabs .ui-tabs-nav li a { float: left; padding: 0.5em 0em; text-decoration: none; } /*Высота нажатой кнопки!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 0px;}
-.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
-.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
-.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 0 0 1.3em 1.4em; background: none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; background-color:#fff;}
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; background-color:#fff;} /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 0 0 1.3em 75px; background: none; }
 .ui-tabs .ui-tabs-hide { display: none !important; }
+
+.ui-tabs .ui-tabs-nav li a, .ui-tabs-nav li.ui-tabs.ui-tabs-collapsible a, .ui-tabs-nav li.ui-tabs-unselected a:hover { cursor: pointer; background-color:#ccc;}
+
+
+
+/* .ui-tabs-nav a{
+    cursor: pointer; background-color:#fdf;
+} */
+/*   .ui-tabs-nav a:focus, .ui-tabs-nav a:active {
+    cursor: pointer; background-color:#fff;
+} */
+ /* .ui-tabs-nav li.ui-tabs-unselect a:hover, .ui-tabs-nav li.ui-tabs-unselect a:focus, .ui-tabs-nav li.ui-tabs-unselect a:active  {
+    cursor: pointer; background-color:#ccc;
+}
+ */
