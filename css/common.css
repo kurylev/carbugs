@@ -172,6 +172,10 @@ li {
 	text-align:center;
 	cursor:pointer;
 	font:1.1em ZagBoldRegular;
+	display:block;
+	 -moz-box-shadow: 0 0 10px rgba(0,0,0,0.7); /* Для Firefox */
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.7); /* Для Safari и Chrome */
+    box-shadow: 0 0 10px rgba(0,0,0,0.7); /* Параметры тени */
 }
 #butons #li1{
 	background-color:#000;
