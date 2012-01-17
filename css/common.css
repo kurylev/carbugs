@@ -62,7 +62,7 @@ body{
 /*_____black________________________________________*/
 
 #black{
-	z-index:4;
+/* 	z-index:4; */
 	width:1200px;
 	height:687px;
 	margin:0;
@@ -74,21 +74,48 @@ body{
 }
 
 #main{
-	overflow:hidden;
-	width:1050px;
-	height:100%;
-	margin:0 75px 0 75px;
- 	/*background:#ccc; */
-	float:left;
+	overflow:hidden; 
+	width:1123px;
+	height:687px;
+	margin:0 0 0 75px;
+	/*  background:#ccf; */    
+	/* float:left;  */
+	position:absolute; 
 }
 #main2{
 	overflow:hidden;
-	width:1050px;
-	height:100%;
-	margin:0 75px 0 75px;
- 	background:#c5f; 
-	float:left;
-	display:none;
+	width:1123px;
+	height:687px;
+	margin:0 0 0 75px;
+	/*  background:#ccc; */  
+	/* float:left; */
+	position:absolute; 
+	 display:none;
+}
+
+#main3{
+	overflow:hidden;
+	width:1123px;
+	height:687px;
+	margin:0 0 0 75px;
+ 	/*  background:#cfc;  */ 
+	/* float:left; */
+	position:absolute; 
+	display:none; 
+}
+#text{
+	position:absolute;
+	margin-top:358px;
+	width:548px;
+	color:#D1D3D4;	
+	font:0.9em HelveticaNeueCyrRoman;
+	line-height:1.4em;
+}
+#main2 > #text{
+	margin-top:315px;
+}
+#main3 > #text{
+	margin-top:285px;
 }
 #logo{
 	background: url(../img/logo.png);
@@ -112,13 +139,21 @@ body{
 	position:absolute;
 	background: url(../img/krug.png);
 	background-repeat:no-repeat;
-	width:441px;
-	height:441px;
-	margin:170px 0 0 612px;
+	width:450px;
+	height:442px;
+	margin:170px 0 0 600px;
+}
+#krug2{
+	position:absolute;
+	background: url(../img/krug2.png);
+	background-repeat:no-repeat;
+	width:450px;
+	height:442px;
+	margin:170px 0 0 600px;
 }
 #why{
 	position:absolute;
-	margin-top:219px;
+	margin-top:215px;
 	font:2em ZagBoldRegular;
 	color:#fff;
 }
@@ -128,38 +163,38 @@ body{
 	/*line-height:2em;*/
 	vertical-align:4.3px;
 }
-#text{
-	position:absolute;
-	margin-top:366px;
-	width:548px;
-	color:#D1D3D4;	
-	font:0.8em HelveticaNeueCyrRoman;	
-}
 #guote_l, #guote_r{
-	position:absolute;
-	margin-top:555px;
+ 	position:absolute; 
+ 	margin-top:555px;
 	margin-left:80px;
-	color:#A29F9D;	
+	color:#838282;	
 	font:5em ZagBoldRegular;
 	letter-spacing:-0.1em;
 	cursor:pointer;
 }
+#guote_l:hover, #guote_r:hover{color:#fff;}
 #guote_r{
-	margin-left:115px;
+	margin-left:117px;
 }
 #point{
 	position:absolute;
-	background: url(../img/point.svg);
+	background: url(../img/points.svg);
 	background-repeat:no-repeat;
-	width:40px;
-	height:14px;
+	/* background-position:0 100%; */
+	width:42px;
+	height:11px;
 	margin-top:640px;
-	margin-left:88px;
+	margin-left:89px;
+	/* border:1px solid #fff;  */
 }
 
 /*_____ gray ________________________________________*/
 
-
+#gray{
+	/* overflow:hidden; */
+	background:#373532;
+	clear:both;
+}
 li {
 	text-decoration:none;
 	list-style:none;
@@ -167,16 +202,20 @@ li {
 	margin-bottom:20px;
 	float:left;
 	width:100px;
-	height:32px;
-	padding-top:8px;
+	height:30px;
+	padding-top:7px;
 	text-align:center;
 	cursor:pointer;
 	font:1.1em ZagBoldRegular;
 	display:block;
-	 -moz-box-shadow: 0 0 10px rgba(0,0,0,0.7); /* Для Firefox */
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.7); /* Для Safari и Chrome */
-    box-shadow: 0 0 10px rgba(0,0,0,0.7); /* Параметры тени */
 }
+#butons #li1, #butons #li2{
+	position:relative;
+	-moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
 #butons #li1{
 	background-color:#000;
 	margin-left:37px;
@@ -186,15 +225,11 @@ li {
 	background-color:#000;
 }
 
-#gray{
-	background:#373532;
-	clear:both;
-}
 #tabs1, #tabs2{
 	display:none;
 	padding: 0 75px;
-	margin-top:65px;
-	height:400px;
+	margin-top:60px;
+	height:460px;
 }
 #spec{
 	font:2em ZagBoldRegular;
@@ -204,19 +239,41 @@ li {
 #spec span{
 	font:0.6em HelveticaNeueCyrThin;
 	color:#C91617;
-	vertical-align:4.3px;
+	vertical-align:6px;
 }
 #text2{
 	/* width:548px; */
 	color:#D1D3D4;	
-	font:0.8em HelveticaNeueCyrRoman;	
+	font:0.9em HelveticaNeueCyrRoman;
+	line-height:1.4em;	
+}
+
+/*_____ futer ________________________________________*/
+
+.cvet{
+vertical-align:-4px;
+margin: 7px 10px 0 10px;
+width:18px;
+height:17px;
 }
 #futer{
 	margin:0px 0 0px 77px;
-	height:50px;
+	height:75px;
 	font:1em HelveticaNeueCyrThin;
+	color:#A3A3A3;
 }
-
+#copir{	
+	font:0.5em HelveticaNeueCyrRoman;
+	color:#A3A3A3;
+	line-height:28px;
+}
+.kontakty{
+	color:#A3A3A3;
+	text-decoration:none; 
+}
+.kontakty:hover{
+	color:#fff;
+}
 
 
 

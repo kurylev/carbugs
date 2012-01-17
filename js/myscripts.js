@@ -72,21 +72,24 @@
      $("#guote_l").click(function () {
 		if ($('#main').css('display') == 'block') {
 			$('#main').hide();                 // убрать
-			$('#main2').show("slide", { direction: "right" }, 500);
+			$('#main3').show('slide', { direction: 'right' }, 400);
+			$('#point').css('background-position','0 100%');
 			
 		}
 		else
-		if ($('#main2').css('display') == 'block') {
-			$('#main2').hide();                 // убрать
-			$('#main').show("slide", { direction: "right" }, 500);
-		
-		}	
-		/* else
 		if ($('#main3').css('display') == 'block') {
 			$('#main3').hide();                 // убрать
-			$('#main').show("slide", {}, 500);
+			$('#main2').show('slide', { direction: 'right' }, 400);
+			$('#point').css('background-position','0, -6px');
 		
-		} */	
+		}	
+		else
+		if ($('#main2').css('display') == 'block') {
+			$('#main2').hide();                 // убрать
+			$('#main').show('slide', { direction: 'right' }, 400);
+			$('#point').css('background-position','0 0');
+		
+		}	
       //$("#main").show("slide", {}, 1400);
     }); 
 	
@@ -95,21 +98,24 @@
      $("#guote_r").click(function () {
 		if ($('#main').css('display') == 'block') {
 			$('#main').hide();                 // убрать
-			$('#main2').show("slide", { direction: "left" }, 500);
+			$('#main2').show('slide', { direction: 'left'}, 400);
+			$('#point').css('background-position','0,-6px');
 			
 		}
 		else
 		if ($('#main2').css('display') == 'block') {
 			$('#main2').hide();                 // убрать
-			$('#main').show("slide", { direction: "left" }, 500);
+			$('#main3').show('slide', { direction: 'left' }, 400);
+			$('#point').css('background-position','0 100%');
 		
 		}	
-		/* else
+		 else
 		if ($('#main3').css('display') == 'block') {
 			$('#main3').hide();                 // убрать
-			$('#main').show("slide", {}, 500);
+			$('#main').show('slide', { direction: 'left' }, 400);
+			$('#point').css('background-position','0 0');
 		
-		} */	
+		}	
       //$("#main").show("slide", {}, 1400);
     });
 
