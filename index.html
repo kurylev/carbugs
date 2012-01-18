@@ -3,12 +3,20 @@
 <head>
 <meta charset="utf-8">
 <title>carbugs</title>
-<link href="css/common.css" rel="stylesheet" type="text/css">
+		<link href="css/common.css" rel="stylesheet" type="text/css">
+		<!--[if lte IE 8]>
+		<link href="css/ie.css" type="text/css" rel="stylesheet">
+		<![endif]-->
 		<script src="js/jquery-1.7.min.js" type="text/javascript"></script>
 		<script src="js/myscripts.js" type="text/javascript"></script>
-
 		<script src="js/jquery-ui-1.8.17.custom.min.js" type="text/javascript"></script>
-
+	
+<!--[if lte IE 7]>
+<style type="text/css">
+#tabs1, #tabs2{margin-top:12px;}
+#gray{margin-top:-25px;}
+</style>
+<![endif]-->
 
 </head>
 
@@ -35,8 +43,7 @@
 				напрямую к разъему OBD, и не оказывает какого-либо влияния на нормальную эксплуатацию 
 				транспортного средства. 
 				Его малый размер,<br> а также тот факт, что он является полностью автоматическим 
-				устройством, означает то, что вы можете 
-				установить его на любой вид транспортного средства 
+				устройством, означает то, что вы можете установить его на любой вид транспортного средства 
 				(Евро2 или более позднего для бензиновых двигателей 
 				и Евро4 или более позднего для дизелей) и просто оставить его для записи 
 				параметров двигателя, не снимая несколько дней или даже неделю.
@@ -55,59 +62,57 @@
 				средство находится под надёжным контролем. 
 				Он с высокой долей вероятности не видел такое устройство в действии, и, в этой связи, будет конечно впечатлен его передовой технологией и эффективностью.<br><br>
 				Когда вы установите OBD Log в автомобиль вашего клиента, он почувствует 
-				удовлетворение от того, что не был просто отправлен домой с «пустыми руками».<br>
+				удовлетворение от того, что не был просто отправлен домой с «пустыми&#160;руками».<br>
 				 OBD Log также увеличивает лояльность клиента, 
 				гарантируя, что он непременно должен обратится к вам для анализа данных проведенного теста.<br><br>
+				</div>
 			</div>
 			
-			</div>
 			<div id="guote_l">&#60;</div>
 			<div id="guote_r">&#62;</div>
 			<div id="point"></div>
-			
 		</div>
 	
-	<div id="butons">
-		<ul>
-			<li id="li1">specification</li>
-			<li id="li2">online shop</li>		
-		</ul>
-	</div>
-		<!-- <div id="click">Click this tab again to close the content pane.</div>
-		<div class="clear"></div>	 -->
-	<div id="gray">
-		<div id="tabs1">
-			<div  id="spec">SPECIFICATION &#91;<span>&#160;спецификация&#160;</span>&#93;</div>
-			<p id="text2">Интерфейс транспортного средства: разъем OBD <br>
-				Совместимость с EOBD: полная электрическая и механическая совместимость со стандартом EOBD.<br>
-				Поддерживаемые протоколы EOBD: все протоколы в соответствии с J1850-41.6, J1850-10.4, ISO9141-2 K/L, CAN (Control Area Network ISO 11898)<br>
-				Источник питания: OBD разъем 12 В для транспортных средств, USB разъем для персональных компьютеров <br>
-				Канал передачи данных: GPRS<br>
-				Потребляемый ток при работающем двигателе: < 100 mA типично<br>
-				Потребляемый ток при выключенном двигателе: < 1 mA типично<br>
-				Процессор: ARM 32-bit Cortex-A8<br>
-				DRAM: 256 KБ<br>
-				Внутренняя память: 2048 KБ<br>
-				Выборочное разрешение: 5 секунд<br>
-				Время записи: 90 часов с 8 записываемыми параметрами при 5 секунд нормы выборки<br>
-				Автономная работа на батарее: минимум 18 месяцев без источника питания; более 20 лет в обычных операционных условиях<br>
-				Интерфейс пользователя: многофункциональный  yellow status LED <br>
-				Рабочая температура: -40°C / +85°C <br>
-				Интерфейс связи с персональным компьютером: USB 2.0 кабель<br>
-				Записываемые параметры: все параметры, поддерживаемые EOBD протоколом, включая скорость, обороты двигателя, температура охлаждающей <br>
-				жидкости, нагрузка на двигатель, норма потока воздуха, температура воздуха, давление воздуха во впускном клапане коллектора, давление топлива, <br>
-				напряжение аккумулятора<br>
-				Выявляемые ошибки: все ошибки, поддерживаемые EOBD протоколом - около 2,500</p>
+		<div id="butons">
+			<ul>
+				<li id="li1">specification</li>
+				<li id="li2">online shop</li>		
+			</ul>
 		</div>
 		
-		<div id="tabs2">
-			<div  id="spec">ONLINE-SHOP &#91;<span>&#160;магазин&#160;</span>&#93;</div>
-			<p id="text2">в разработке</p>
-		</div>
+		<div id="gray">
+			<div id="tabs1">
+				<div  id="spec">SPECIFICATION &#91;<span>&#160;спецификация&#160;</span>&#93;</div>
+				<p id="text2">Интерфейс транспортного средства: разъем OBD <br>
+					Совместимость с EOBD: полная электрическая и механическая совместимость со стандартом EOBD.<br>
+					Поддерживаемые протоколы EOBD: все протоколы в соответствии с J1850-41.6, J1850-10.4, ISO9141-2 K/L, CAN (Control Area Network ISO 11898)<br>
+					Источник питания: OBD разъем 12 В для транспортных средств, USB разъем для персональных компьютеров <br>
+					Канал передачи данных: GPRS<br>
+					Потребляемый ток при работающем двигателе: < 100 mA типично<br>
+					Потребляемый ток при выключенном двигателе: < 1 mA типично<br>
+					Процессор: ARM 32-bit Cortex-A8<br>
+					DRAM: 256 KБ<br>
+					Внутренняя память: 2048 KБ<br>
+					Выборочное разрешение: 5 секунд<br>
+					Время записи: 90 часов с 8 записываемыми параметрами при 5 секунд нормы выборки<br>
+					Автономная работа на батарее: минимум 18 месяцев без источника питания; более 20 лет в обычных операционных условиях<br>
+					Интерфейс пользователя: многофункциональный  yellow status LED <br>
+					Рабочая температура: -40°C / +85°C <br>
+					Интерфейс связи с персональным компьютером: USB 2.0 кабель<br>
+					Записываемые параметры: все параметры, поддерживаемые EOBD протоколом, включая скорость, обороты двигателя, температура охлаждающей <br>
+					жидкости, нагрузка на двигатель, норма потока воздуха, температура воздуха, давление воздуха во впускном клапане коллектора, давление топлива, <br>
+					напряжение аккумулятора<br>
+					Выявляемые ошибки: все ошибки, поддерживаемые EOBD протоколом - около 2,500</p>
+			</div>
+			
+			<div id="tabs2">
+				<div  id="spec">ONLINE-SHOP &#91;<span>&#160;магазин&#160;</span>&#93;</div>
+				<p id="text2">в разработке</p>
+			</div>
 
-		<div id="futer"> <hr width="520px", align="left"> <a href="http://www.y.ru" target="_blank" class="kontakty">главная</a> <img class="cvet" src="img/cvet.svg"></img> <a href="http://www.y.ru" target="_blank" class="kontakty">Контакты</a> <img class="cvet" src="img/cvet.svg"></img> <a href="http://www.y.ru" target="_blank" class="kontakty">Пресса</a> <img class="cvet" src="img/cvet.svg"></img> <a href="http://www.y.ru" target="_blank" class="kontakty">Поддержка</a> <img class="cvet" src="img/cvet.svg"></img> <a href="http://www.y.ru" target="_blank" class="kontakty">Где купить</a> <br><span id="copir">2011 CARBUGS GROUP, Inc. All Rights Reserved</span></div> 		
-	</div>			
-</div>	
+			<div id="futer"> <hr width="520px", align="left"> <a href="https://github.com/kurylev/carbugs" target="_blank" class="kontakty">главная</a> <img class="cvet" src="img/cvet.svg" border="0"></img> <a href="http://www.y.ru" target="_blank" class="kontakty">Контакты</a> <img class="cvet" src="img/cvet.svg"></img> <a href="http://www.y.ru" target="_blank" class="kontakty">Пресса</a> <img class="cvet" src="img/cvet.svg"></img> <a href="http://www.y.ru" target="_blank" class="kontakty">Поддержка</a> <img class="cvet" src="img/cvet.svg"> </img> <a href="http://www.y.ru" target="_blank" class="kontakty">Где купить</a> <br><span id="copir">2011 CARBUGS GROUP, Inc. All Rights Reserved</span></div> 
+	</div>		
 
+	</div>	
 </body>
 </html>

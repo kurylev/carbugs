@@ -1,4 +1,20 @@
 
-#black{
+/* #black{
 filter: progid:DXImageTransform.Microsoft.shadow(direction=180, color=#000000, strength=10);
+} */
+
+#point{
+	background: url(../img/points.png);
+	background-repeat:no-repeat;
+	width:42px;
+	height:13px;
+	zoom:1;
 }
+ .cvet{
+	background: url(../img/cvet.png) !important;
+	background-repeat:no-repeat !important;
+	border:none; 
+	width:18px;
+	height:17px;	
+} 
+li {margin:-19px 0 20px 0;} 
