@@ -48,13 +48,14 @@ html, body{
 	height:100%;
 	font:1em HelveticaNeueCyrLight;
 	color:#fff;
+/* 	background:#000; */
 }
 body{
 	margin:0;
 }
 #container{
 	width:1200px;
-	height:768px;
+	height:780px;
 	margin:0 auto;
 	background:#373532;
 }
@@ -71,7 +72,7 @@ body{
 
 #black{
 	width:1200px;
-	height:687px;
+	height:715px;
 	margin:0;
 	background:#000 url(../img/top.png);
 	background-repeat:no-repeat;
@@ -153,13 +154,13 @@ body{
 }
 #guote_l, #guote_r{
  	position:absolute; 
- 	margin:555px 0 0 80px;
+ 	margin:570px 0 0 90px;
 	color:#838282;	
 	font:5em ZagBoldRegular;
 	cursor:pointer;
 }
 #guote_l:hover, #guote_r:hover{color:#fff;}
-#guote_r{margin-left:117px;}
+#guote_r{margin-left:121px;}
 #point{
 	position:absolute;
 	background: url(../img/points.svg);
@@ -167,7 +168,7 @@ body{
 	background-repeat:no-repeat;
 	width:43px;
 	height:10px;
-	margin:640px 0 0 88px;
+	margin:650px 0 0 94px;
 	padding:0;
 	zoom:1;
 	/* border:solid 1px; */
@@ -175,11 +176,6 @@ body{
 
 /*_____ gray ________________________________________*/
 
-#gray{
-	background:#373532;
-	clear:both;
-	zoom:1;
-}
 li {
 	text-decoration:none;
 	list-style:none;
@@ -205,6 +201,11 @@ li {
 }
 #butons #li2{
 	background-color:#000;
+}
+#gray{
+	background:#373532;
+	clear:both;
+	zoom:1;
 }
 #tabs1, #tabs2{
 	display:none;
