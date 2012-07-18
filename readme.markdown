@@ -1,5 +1,5 @@
 #CARBUGS
 ##Создание сайта
-Проект
+Проект (временно заморожен)
 
 [http://severe-moon-616.heroku.com](http://severe-moon-616.heroku.com)
